@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Protein Property Calculator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Protein Property Calculator</h1>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Welcome to the Protein Property Calculator</h2>
+      <p>Enter a protein sequence to calculate its properties:</p>
+      <textarea id="sequenceInput" placeholder="Enter protein sequence"></textarea>
+      <button onclick="calculateProperties()">Calculate</button>
+    </section>
+
+    <section id="result" style="display: none;">
+      <h2>Protein Properties</h2>
+      <div id="resultContainer"></div>
+      <button onclick="goToHome()">Calculate Another Protein</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
